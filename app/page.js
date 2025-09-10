@@ -1,8 +1,18 @@
+"use client";
+import Button from "./components/Button";
+
 export default function Home() {
+  function handleClick() {
+    alert("🚀 Button is working!");
+  }
+
   return (
     <main>
-      <h1>Welcome to Next.js Project</h1>
-      <p>Basic structure is ready, project started.</p>
+      <h1>Hello, Next.js Intern</h1>
+      <p>Welcome to the homepage!</p>
+
+      {/* Button with click handler */}
+      <Button text="Click Me" onClick={handleClick} />
     </main>
-  )
+  );
 }
